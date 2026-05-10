@@ -1,0 +1,32 @@
+# Backend
+happyshop-backend/target/
+happyshop-backend/*.class
+happyshop-backend/*.jar
+happyshop-backend/*.log
+happyshop-backend/uploads/
+
+# Frontend
+happyshop-frontend/node_modules/
+happyshop-frontend/dist/
+happyshop-frontend/.env.local
+happyshop-frontend/.env.*.local
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+*.mvn/
+mvnw
+mvnw.cmd
+
+# Env
+.env
+*.env.local
