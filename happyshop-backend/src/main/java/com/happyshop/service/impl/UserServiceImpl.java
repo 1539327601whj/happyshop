@@ -69,6 +69,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User getUserByUsername(String username) {
+        User user = userMapper.selectOne(
+                new LambdaQueryWrapper<User>().eq(User::getUsername, username));
+        if (user != null) {
+            user.setPassword(null);
+        }
+        return user;
+    }
+
+    @Override
     public void updateUserInfo(Long userId, User updateUser) {
         User user = userMapper.selectById(userId);
         if (user == null) {

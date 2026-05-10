@@ -30,9 +30,7 @@ public class AuthController {
     @PostMapping("/login")
     public Result<LoginVO> login(@Valid @RequestBody LoginDTO dto) {
         String token = userService.login(dto.getUsername(), dto.getPassword());
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        Long userId = (Long) auth.getPrincipal();
-        User user = userService.getUserById(userId);
+        User user = userService.getUserByUsername(dto.getUsername());
 
         LoginVO vo = new LoginVO();
         vo.setToken(token);

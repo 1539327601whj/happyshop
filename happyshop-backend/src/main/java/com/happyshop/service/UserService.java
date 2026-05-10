@@ -10,6 +10,8 @@ public interface UserService {
 
     User getUserById(Long id);
 
+    User getUserByUsername(String username);
+
     void updateUserInfo(Long userId, User user);
 
     void changePassword(Long userId, String oldPassword, String newPassword);
