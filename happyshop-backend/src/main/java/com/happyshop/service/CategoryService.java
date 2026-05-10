@@ -1,0 +1,17 @@
+package com.happyshop.service;
+
+import com.happyshop.entity.Category;
+import java.util.List;
+
+public interface CategoryService {
+
+    List<Category> getAllCategories();
+
+    List<Category> getCategoryTree();
+
+    void addCategory(Category category);
+
+    void updateCategory(Category category);
+
+    void deleteCategory(Long id);
+}

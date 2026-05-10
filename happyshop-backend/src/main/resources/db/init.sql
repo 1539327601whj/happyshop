@@ -228,7 +228,7 @@ CREATE TABLE IF NOT EXISTS `coupon` (
 
 -- 初始管理员账号（密码: admin123, BCrypt加密）
 INSERT INTO `user` (`username`, `password`, `nickname`, `role`, `status`)
-VALUES ('admin', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '系统管理员', 'ADMIN', 1)
+VALUES ('admin', '$2a$10$EqKcp1WFKVQIShMPC7B3kuznX9gAZMsVnSNjN0ABNuHVBCpzqABae', '系统管理员', 'ADMIN', 1)
 ON DUPLICATE KEY UPDATE `username` = `username`;
 
 -- 初始分类数据
