@@ -2,6 +2,8 @@
 
 类似淘宝的全功能电商 Web 应用。
 
+GitHub: https://github.com/1539327601whj/happyshop
+
 ## 技术栈
 
 - **后端**: Spring Boot 3 + MyBatis-Plus + Spring Security + JWT
